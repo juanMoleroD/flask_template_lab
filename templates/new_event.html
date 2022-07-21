@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>New Event</h1>
+    <form action="/events" method="POST">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date">
+        <label for="name">Event Name</label>
+        <input type="text" name="name" id="name">
+        <label for="num_attendees">Attendees</label>
+        <input type="text" name="num_attendees" id="num_ateendees">
+        <label for="room">Room</label>
+        <input type="text" name="room" id="room">
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description">
+        <label for="recurring">Recurring</label>
+        <input type="text" name="recurring" id="recurring">
+        <input type="submit" value="New Event">
+    </form>
+
+</body>
+</html>
